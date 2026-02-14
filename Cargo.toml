@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "kernel",
+    "boot",
+    "libs/bootinfo",
+    "libs/sys",
+    "userland/init"
+]
+resolver = "2"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"

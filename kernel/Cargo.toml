@@ -1,0 +1,13 @@
+[package]
+name = "mantracore"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+mantra-bootinfo = { path = "../libs/bootinfo" }
+mantra-sys = { path = "../libs/sys" }
+
+[[bin]]
+name = "mantracore"
+path = "src/main.rs"

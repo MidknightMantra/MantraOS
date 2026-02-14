@@ -1,0 +1,12 @@
+[package]
+name = "mantra-init"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mantra-sys = { path = "../../libs/sys" }
+
+[[bin]]
+name = "mantra-init"
+path = "src/main.rs"
+
